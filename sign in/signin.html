@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>葡萄酒商城|登录</title>
+    <!--  jquery js start-->
+    <script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="css/signin.css"/>
+    <link href="../favicon.ico" rel="SHORTCUT ICON"/>
+    <script src="../js/js.js"></script>
+    <meta name="Keywords" content="网页的关键字"/>
+    <meta name="Description" content="网页的描述"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- h5标签和媒体查询兼容性处理-->
+    <!--[if lt ie9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![end if]-->
+    <script src="../js/prefixfree.min.js"></script>
+    <!--css3新特性的兼容性问题（前缀问题），属性前加上 -*- -->
+</head>
+<body>
+<!--header start-->
+<header>
+    <section>
+        <section class="clearfix width wrap">
+            <div class="pull-left ">
+                <time>在线时间 08:30~21:30</time>
+                <p>澳洲葡萄酒庄正品直销!</p>
+            </div>
+            <div class="pull-right log clearfix">
+                <a href="../sign%20in/signin.html" class="pull-left"> 亲，请登录</a><a href="../sign%20in/register.html" class="pull-left">注册</a><a href="../commodity/product/product.html" class="pull-left"><img src="../img/购物车%20(2).png" alt=""></a>
+            </div>
+        </section>
+        <section class="clearfix width box">
+            <h1 class="pull-left"><a href="../index.html"><img src="../img/logo.png" alt=""></a></h1>
+            <input type="text" class="pull-right" placeholder="搜索商品关键子">
+        </section>
+        <section class="nav">
+            <div class="width">
+                <div class="navigation">
+                    <ul class="clearfix">
+                        <li class="pull-left"><a href="../index.html">商城首页</a></li>
+                        <li class="pull-left"><a href="../news/news.html">商城动态</a></li>
+                        <li class="pull-left"><a href="../commodity/commodity.html">所有商品</a></li>
+                        <li class="pull-left"><a href="../payment/payment.html">支付方式</a></li>
+                        <li class="pull-left"><a href="../about/about.html">关于店铺</a></li>
+                        <li class="pull-left"><a href="../contact/contact.html">线下门店</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+</header>
+<div class="inner clearfix hide">
+    <div class="pull-left" id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="inner-logo text-center"><a href="../index.html"><img src="../img/logo.png" alt=""/></a></div>
+    <div class="link clearfix ">
+        <a href="" class="pull-left"><img src="../img/放大镜%20(1).png" alt=""/></a>
+        <a href="../sign%20in/signin.html" class="pull-left"><img src="../img/人物-人.png" alt=""/></a>
+        <a href="../sign%20in/register.html" class="pull-left"><img src="../img/购物车%20(1).png" alt=""/></a>
+    </div>
+</div>
+<div class="aside_navMedeo"></div>
+<!--nav start-->
+<nav class="nav" id="aside_nav">
+    <ul class="clearfix entry">
+        <li class="pull-left"><a href="../sign%20in/signin.html">登录</a></li>
+        <li class="pull-left"><a href="../sign%20in/register.html">注册</a></li>
+    </ul>
+    <ul class="carte">
+        <li><a href="../index.html">商城首页</a></li>
+        <li><a href="../news/news.html">商城动态</a></li>
+        <li><a href="../commodity/commodity.html">所有商品</a></li>
+        <li><a href="../payment/payment.html">支付方式</a></li>
+        <li><a href="../about/about.html">关于店铺</a></li>
+        <li><a href="../contact/contact.html">线下门店</a></li>
+    </ul>
+</nav>
+<!--nav end-->
+<!--header end-->
+
+<!--main start-->
+<main>
+ <section class="width">
+     <form>
+        <div class="container" data-scroll-reveal="enter top">
+            <h2>用户登录∣注册</h2>
+            <div>
+                <label for="user">手机/用户/邮箱</label>
+                <input type="text" id="user">
+            </div>
+            <div>
+                <label for="password">密码</label>
+                <input type="text" id="password">
+            </div>
+            <label for="choice">
+                <input type="checkbox" id="choice">记住我（请在私人计算机上使用此功能）
+            </label>
+            <div>
+                <input type="button" value="登录">
+                <a href="register.html" class="register">注册</a>
+            </div>
+            <p>第三方账号登录：<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101202597&state=qq&scope=get_user_info%2Cadd_share%2Clist_album%2Cadd_album%2Cupload_pic%2Cadd_topic%2Cadd_one_blog%2Cadd_weibo&redirect_uri=http%3A%2F%2Fwww.qifeiye.com"></a></p>
+            <a href="forget.html">忘记密码？点这里找回</a>
+        </div>
+     </form>
+ </section>
+</main>
+<!--main end-->
+
+<!--footer start-->
+<section class="footer">
+    <div class="width" data-scroll-reveal="enter top">
+        <h5>用户注册/登录说明：</h5>
+        <p>1.演示用户名：<span>demouser</span>；密码<span>demo1234</span></p>
+        <p>2.实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教程：<span>《用户管理中相关邮件的配置》</span></p>
+        <p>3.新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理员批准（即人工审核），详情可参考教程 <span>《如何设置用户注册后的审核方式》</span></p>
+    </div>
+</section>
+<div id="up">
+    <div><i></i></div>
+    <div><i></i></div>
+    <div id="upTop"><i></i></div>
+</div>
+<!--footer end-->
+</body>
+</html>
+<script src="../js/scrollReveal.js"></script>
+<script>
+    (function(){
+        window.scrollReveal = new scrollReveal({ reset: true, move: '50px'});
+    })();
+</script>
+<script>
+    // 返回顶部
+    $("#upTop").click(function(){
+        $('body,html').animate({scrollTop:0},500);
+        return false;
+    });
+</script>

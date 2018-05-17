@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>葡萄酒商城|线下门店</title>
+    <!--  jquery js start-->
+    <script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link href="../favicon.ico" rel="SHORTCUT ICON"/>
+    <script src="../js/js.js"></script>
+    <meta name="Keywords" content="网页的关键字"/>
+    <meta name="Description" content="网页的描述"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- h5标签和媒体查询兼容性处理-->
+    <!--[if lt ie9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![end if]-->
+    <script src="../js/prefixfree.min.js"></script>
+    <!--css3新特性的兼容性问题（前缀问题），属性前加上 -*- -->
+</head>
+<body>
+<!--header start-->
+<header>
+    <section>
+        <section class="clearfix width wrap">
+            <div class="pull-left ">
+                <time>在线时间 08:30~21:30</time>
+                <p>澳洲葡萄酒庄正品直销!</p>
+            </div>
+            <div class="pull-right log clearfix">
+                <a href="../sign%20in/signin.html" class="pull-left"> 亲，请登录</a><a href="../sign%20in/register.html" class="pull-left">注册</a><a href="../commodity/product/product.html" class="pull-left"><img src="../img/购物车%20(2).png" alt=""></a>
+            </div>
+        </section>
+        <section class="clearfix width box">
+            <h1 class="pull-left"><a href="../index.html"><img src="../img/logo.png" alt=""></a></h1>
+            <input type="text" class="pull-right" placeholder="搜索商品关键子">
+        </section>
+        <section class="nav">
+            <div class="width">
+                <div class="navigation">
+                    <ul class="clearfix">
+                        <li class="pull-left"><a href="../index.html">商城首页</a></li>
+                        <li class="pull-left"><a href="../news/news.html">商城动态</a></li>
+                        <li class="pull-left"><a href="../commodity/commodity.html">所有商品</a></li>
+                        <li class="pull-left"><a href="../payment/payment.html">支付方式</a></li>
+                        <li class="pull-left"><a href="../about/about.html">关于店铺</a></li>
+                        <li class="pull-left"><a href="../contact/contact.html">线下门店</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+</header>
+<div class="inner clearfix hide">
+    <div class="pull-left" id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="inner-logo text-center"><a href="../index.html"><img src="../img/logo.png" alt=""/></a></div>
+    <div class="link clearfix ">
+        <a href="" class="pull-left"><img src="../img/放大镜%20(1).png" alt=""/></a>
+        <a href="../sign%20in/signin.html" class="pull-left"><img src="../img/人物-人.png" alt=""/></a>
+        <a href="../sign%20in/register.html" class="pull-left"><img src="../img/购物车%20(1).png" alt=""/></a>
+    </div>
+</div>
+<div class="aside_navMedeo"></div>
+<!--nav start-->
+<nav class="nav" id="aside_nav">
+    <ul class="clearfix entry">
+        <li class="pull-left"><a href="../sign%20in/signin.html">登录</a></li>
+        <li class="pull-left"><a href="../sign%20in/register.html">注册</a></li>
+    </ul>
+    <ul class="carte">
+        <li><a href="../index.html">商城首页</a></li>
+        <li><a href="../news/news.html">商城动态</a></li>
+        <li><a href="../commodity/commodity.html">所有商品</a></li>
+        <li><a href="../payment/payment.html">支付方式</a></li>
+        <li><a href="../about/about.html">关于店铺</a></li>
+        <li><a href="../contact/contact.html">线下门店</a></li>
+    </ul>
+</nav>
+<!--nav end-->
+<!--header end-->
+
+<!--main start-->
+<main class="width">
+    <section class="contact">
+        <h2 data-scroll-reveal="enter bottom over 1s and move 300px after 0.3s">Contact<small>线下实体</small></h2>
+        <div>
+            <p>地址：江苏省苏州市工业园区金鸡湖大道99号</p>
+            <p>电话：400 6666 6666</p>
+        </div>
+        <div style="width:778px;height:350px;border:#ccc solid 1px;" id="dituContent"></div>
+    </section>
+</main>
+<script src="../js/scrollReveal.js"></script>
+<script>
+    (function(){
+        window.scrollReveal = new scrollReveal({ reset: true, move: '50px'});
+    })();
+</script>
+<!--main end-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.027751,28.188236);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"江苏省苏州市工业园区金鸡湖大道99号",content:"金鸡湖大道99号<br/>400-8888-888",point:"120.781316|31.295587",isOpen:1,icon:{w:0,h:0,l:0,t:0,x:0,lb:0}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+<!--footer start-->
+<footer>
+    <div class="width">
+        <section class="footer-head clearfix">
+            <figure class="clearfix pull-left">
+                <img src="../img/footer(1).png" alt="" class="pull-left">
+                <figcaption class="pull-left">
+                    <h6>满1000全包邮</h6>
+                    <p>全场订单满1000包邮</p>
+                </figcaption>
+            </figure>
+            <figure class="clearfix pull-left">
+                <img src="../img/footer(2).png" alt="" class="pull-left">
+                <figcaption class="pull-left">
+                    <h6>满1000全包邮</h6>
+                    <p>全场订单满1000包邮</p>
+                </figcaption>
+            </figure>
+            <figure class="clearfix pull-left">
+                <img src="../img/footer(3).png" alt="" class="pull-left">
+                <figcaption class="pull-left">
+                    <h6>满1000全包邮</h6>
+                    <p>全场订单满1000包邮</p>
+                </figcaption>
+            </figure>
+            <figure class="clearfix pull-left">
+                <img src="../img/footer(4).png" alt="" class="pull-left">
+                <figcaption class="pull-left">
+                    <h6>满1000全包邮</h6>
+                    <p>全场订单满1000包邮</p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="clearfix case">
+            <div class="pull-left">
+                <div>
+                    <h5>关于产品</h5>
+                    <p>本店商品均为易碎品，非质量问题<br/>谢绝退货，如有质量问题，本店承<br/>担运费调换</p>
+                </div>
+                <div>
+                    <h5>支付方式</h5>
+                    <p class="clearfix">
+                        <img src="../img/yinlian.png" alt="" class="pull-left" width="49px" height="32px"/>
+                        <img src="../img/zhifb.png" alt="" class="pull-left" width="34px" height="34px"/>
+                        <img src="../img/wx.png" alt="" class="pull-left" width="34px" height="34px"/>
+                    </p>
+                </div>
+            </div>
+            <div class="pull-left">
+                <div>
+                    <h5>售后服务</h5>
+                    <p>消费者保障服务<br/>七天无理由退款<br/>假一赔三</p>
+                </div>
+                <div>
+                    <h5>关于商城</h5>
+                    <p>非质量问题谢绝退货，如有质量问<br/>题，本店承担运费调换</p>
+                </div>
+            </div>
+            <div class="pull-left">
+                <div>
+                    <h5>退换货政策</h5>
+                    <p>本店商品均为易碎品，非质量问题<br/>谢绝退货，如有质量问题，本店承<br/>担运费调换</p>
+                </div>
+                <div>
+                    <h5>关于产品</h5>
+                    <p>非质量问题谢绝退货，如有质量问<br/>题，本店承担运费调换</p>
+                </div>
+            </div>
+            <div class="pull-left">
+                <div>
+                    <h5>售后服务</h5>
+                    <p>非质量问题谢绝退货，如有质量问<br/>题，本店承担运费调换</p>
+                </div>
+            </div>
+            <div class="pull-left">
+                <h5><img src="../img/footer%20logo.png" alt=""></h5>
+                <figure>
+                    <img src="../img/red.jpg" alt="">
+                    <figcaption class="text-center">
+                        <p>本搜索微信号：RED WINE</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="container">
+            <div class="clearfix">
+                <span class="pull-left"></span>
+                <span class="pull-left"></span>
+                <span class="pull-left"></span>
+                <span class="pull-left"></span>
+                <span class="pull-left"></span>
+                <span class="pull-left"></span>
+            </div>
+            <p>Copyright © 2010-2020红酒庄园直营商品专卖 All rights reserved</p>
+        </section>
+    </div>
+</footer>
+<div id="up">
+    <div><i></i></div>
+    <div><i></i></div>
+    <div id="upTop"><i></i></div>
+</div>
+<!--footer end-->
+</body>
+</html>
+<script>
+    // 返回顶部
+    $("#upTop").click(function(){
+        $('body,html').animate({scrollTop:0},500);
+        return false;
+    });
+</script>

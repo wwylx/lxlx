@@ -1,0 +1,149 @@
+@charset "UTF-8";
+* input[type='button']{
+    cursor:pointer;
+}
+/*====================================main start*/
+main{
+    background: #EFEFEF;
+}
+main section{
+    padding: 100px 0;
+}
+main form{
+    background:#FDFDFD;
+    padding: 80px 0 80px;
+    font-family: 微软雅黑;
+}
+main form .container{
+    width: 424px;
+    margin: 0 auto;
+}
+main form h2{
+    text-align: center;
+    font-size: 28px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+main form .container div label{
+    font-size: 13px;
+    display: block;
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+main form input[type='text']{
+    line-height: 32px;
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+    color: #000000;
+    width: 100%;
+    margin-bottom: 15px;
+}
+main input[type='checkbox']{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-right: 25px;
+}
+main form .container>label{
+    font-size: 13px;
+    padding: 0 0 15px 0;
+    display: block;
+    border-bottom: 1px solid #E5E5E5;
+    color: #888 !important;
+}
+main form .container input[type='button']{
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    background: #b2b2b2;
+    border: 1px solid #b2b2b2;
+    color: #fff;
+    width: 20%;
+    display: inline-block;
+    border-radius:5px;
+    margin:15px 5px 0;
+}
+main form .container .register{
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #b2b2b2;
+    width: 20%;
+    display: inline-block;
+    border-radius:5px;
+    margin:15px 5px 0;
+    background:white;
+    color:#666666;
+}
+main form p{
+    height: 33px;
+    margin-top: 5px;
+    /*padding-top: 10px;*/
+}
+main form .container p a{
+    display:inline-block;
+    background-image: url("../img/social_icon_16x16.png");
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    background-position: -32px -48px;
+    margin:-2px 3px;
+}
+main form .container>a{
+    display: block;
+    text-align:right;
+    line-height: 32px;
+    color: black;
+    font-size: 13px;
+    padding: 0 30px;
+}
+/*====================================main end*/
+
+/*====================================footer start*/
+.footer div{
+    padding: 20px 0;
+}
+.footer h5{
+    line-height: 26px;
+    color: black;
+    font-size: 13px;
+    display: block;
+    font-weight: 100;
+}
+.footer p{
+    line-height: 17px;
+    color: #696969;
+    font-size: 13px;
+}
+.footer span{
+    color: #1365F2;
+}
+/*====================================footer end*/
+/*=====================================响应式开始*/
+
+@media screen and (max-width: 768px){
+    main{
+        background: #FDFDFD;
+    }
+    main form{
+        padding: 0;
+    }
+    main form .container{
+        width: 100%;
+    }
+    main section{
+        padding:100px 0 10px;
+    }
+}
+@media screen and (max-width:450px){
+    main form .container input[type='button']{
+        display: block;
+        width: 100%;
+    }
+    main form .container .register{
+        width: 100%;
+    }
+}
+/*=====================================响应式结束*/

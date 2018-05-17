@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.navigation ul li:last-of-type{
+    background: #5E0000;
+}
+/*=========================================main start*/
+main{
+    padding: 60px 0 100px 0;
+}
+main .contact h2{
+    font-size: 48px;
+    color: black;
+    display: block;
+    font-weight: 100;
+    padding: 0 0 32px;
+    transition: .6s;
+}
+main .contact h2 small{
+    font-size: 13px;
+    display: block;
+    padding: 2px;
+    line-height: 25px;
+}
+main .contact p{
+    color:#696969;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+/*=========================================main end*/
+@media screen and (max-width: 768px){
+    main .contact h2{
+        font-size: 28px;
+    }
+    main .about{
+        width: 100%;
+    }
+    #dituContent{
+        width: 100% !important;
+    }
+}

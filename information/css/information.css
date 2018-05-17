@@ -1,0 +1,189 @@
+@charset "UTF-8";
+html{
+    overflow-x: hidden;
+}
+/*=====================================main start*/
+/*crumbs*/
+main{
+    background: #EDEDED;
+    padding: 20px 0 0;
+}
+main .crumbs{
+    background: white;
+    padding: 10px 25px;
+}
+main .crumbs li{
+    color: #666666;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    line-height: 19px;
+}
+main .crumbs li a{
+    color: #666666;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    line-height: 19px;
+}
+/*==============================content start*/
+main .content{
+    padding: 15px 0 100px 0;
+}
+main .content div>a{
+    font-size: 14px;
+    color: #1365f2;
+    line-height: 21px;
+}
+/*superinduce*/
+main .superinduce{
+    background: white;
+    padding: 15px 30px 40px;
+    margin-right: 15px;
+    width: 67.197%;
+}
+main .superinduce h3{
+    font-size: 22px;
+    padding: 17px 0 40px 0;
+}
+main .share{
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    padding: 10px 0;
+}
+main .share p{
+    font-size: 12px;
+    color:#aaa;
+    line-height: 18px;
+}
+main .share a{
+    display: inline-block;
+    background: url("../img/jiathis_ico.png")no-repeat;
+    width: 20px;
+    height: 16px;
+    background-position: 0 -1809px;
+}
+main .share a:nth-of-type(2){
+    background-position: 0 -96px;
+}
+main .share a:nth-of-type(3){
+    background-position: 0 -560px;
+}
+main .share a:nth-of-type(4){
+    background-position: 0 -688px;
+}
+main .share a:nth-of-type(5){
+    background-position: 0 -704px;
+}
+main .share a:nth-of-type(6){
+    background-position: 0 -1152px;
+}
+main .share a:last-of-type{
+    display: inline-block;
+    width: 36px !important;
+    height: 16px;
+    background: url(../img/counter.gif) no-repeat 0 -64px;
+}
+main .add{
+    margin:20px 0 20px;
+    padding:100px 0 170px;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+main .add h5{
+    font-size: 14px;
+    color: #333333;
+    font-weight: normal;
+    line-height: 25px;
+}
+main .add p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #333333;
+}
+main .add p a{
+    display:inline-block;
+    background: url("../img/齿轮2.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    height: 28px;
+    width: 28px;
+}
+/*aside*/
+main aside{
+    background: white;
+    padding: 25px;
+    margin-left: 10px;
+    width:30.5%;
+}
+main aside h4{
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    border: 2px solid #EDEDED;
+    text-align: center;
+    padding:5px 0;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+main aside li{
+    padding: 0 5px 10px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+main aside li:hover{
+    padding-left: 10px;
+}
+main aside li:hover a{
+    color: #494949;
+}
+main aside li p a{
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: #888888;
+    width: 100%;
+    margin-bottom: 10px;
+}
+main aside span{
+    color: #c4c4c4;
+    font-size: 12px;
+    line-height: 12px;
+}
+/*==============================content end*/
+/*=====================================main end*/
+/*====================================================response start*/
+@media screen and (max-width:1200px) and (min-width:993px){
+    .width{
+        width: 90%;
+        margin: 0 auto;
+    }
+    main .superinduce{
+        width: 60.597%;
+    }
+    main aside{
+        width: 36.5%;
+    }
+
+}
+@media screen and (max-width:992px){
+    .width{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .content>section{
+        float: none;
+        width: 100%;
+        padding: 15px 12px 40px;
+        margin-right: 0;
+    }
+    .content>aside{
+        float: none;
+        width: 100%;
+        margin-left:0;
+        padding:12px;
+        margin-top: 15px;
+    }
+}
+
+/*====================================================response end*/

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*=============================================main start*/
+main form .prompt{
+    background: #fffeda;
+    border: 1px solid #f9f893;
+    border-radius: 0;
+    color: #444 !important;
+    padding: 10px !important;
+    line-height: 18px !important;
+}
+main form p{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+main form label{
+    margin-top: 15px;
+}
+main form input[type='text']{
+    margin-bottom: 0;
+}
+main form .container .register{
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #b2b2b2;
+    width: 30% !important;
+    display: inline-block;
+    border-radius:5px;
+    margin:15px 5px 0;
+    background:white;
+    color:#666666;
+}
+/*=============================================main end*/
+/*==================================响应式开始*/
+@media screen and (max-width:450px){
+    main form .container input[type='button']{
+        display: block;
+        width: 100%;
+    }
+    main form .container .register{
+        width: 100%!important;
+    }
+}
+/*==================================响应式结束*/

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+main .box a:first-of-type{
+    background: #560e00;
+}
+main .box a:nth-of-type(2){
+    background: #591E18 !important;
+}

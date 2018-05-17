@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*==================================main start*/
+main label span{
+    color: red;
+}
+main form .strength{
+    margin-top: 15px;
+    color: #888;
+    font-size: 13px;
+}
+main form .strength span{
+    width: 40px;
+    height: 8px;
+    display: inline-block;
+    background: #ddd;
+    margin: 14px 0 0 0;
+}
+main form .container>label{
+    padding: 15px 0;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
+}
+main form .container .register{
+    width: 50% !important;
+    margin-left: 90px;
+}
+/*==================================main end*/
+
+/*==================================响应式开始*/
+@media screen and (max-width:450px){
+    main form .container input[type='button']{
+        display: block;
+        width: 100%;
+    }
+    main form .container .register{
+        width: 100%!important;
+    }
+}
+/*==================================响应式结束*/

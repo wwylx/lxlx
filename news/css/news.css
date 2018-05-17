@@ -1,0 +1,197 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+a:hover{
+    text-decoration: none;
+}
+.width{
+    width: 1283px;
+    margin: 0 auto;
+}
+.navigation ul li:nth-of-type(2){
+    background: #5E0000;
+}
+/*==============================================main start*/
+main{
+    background: url("../img/banner(1).png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 100px;
+}
+main h3{
+    font-size: 48px;
+    font-weight: normal;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 54px;
+}
+main h3 small{
+    margin-top: 5px;
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 2px;
+}
+/*=================================news start*/
+main .news{
+    width: 846px;
+}
+main figure{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted rgb(119, 82, 82);
+}
+main figure img{
+    width: 150px;
+    padding-right: 20px;
+}
+main figcaption{
+    width: 665px;
+ }
+main figcaption h4{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+main  h4 a{
+    color: #f2ded5 !important;
+}
+main figcaption time{
+    padding: 10px 0;
+    color: #8c7a77;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 5px;
+    display: block;
+}
+main figcaption p{
+    color: #a09086;
+    font-size: 13px;
+    line-height: 22px;
+}
+/*===============================box start*/
+main .box a{
+    color: white;
+    max-width: 100%;
+    font-size: 14px;
+    display: block;
+    background: #560e00;
+    border-top: 1px solid #72352b;
+    width:274px;
+    height: 43px;
+    padding: 10px 20px;
+}
+main .box a span{
+    transform:rotate(90deg);
+    display: inline-block;
+    padding:3px 0  3px  0;
+    font-size: 12px;
+}
+main .box a:first-of-type{
+     background: #591E18;
+}
+main .box a:hover{
+    background: #591E18;
+    text-decoration: none;
+}
+/*===================paging start*/
+main .paging{
+    text-align: right;
+}
+main  .paging a{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px 6px;
+}
+main .paging a:first-of-type{
+    color:black;
+    background: white;
+}
+/*==============================================main end*/
+@media screen and (max-width:1200px) and (min-width:993px){
+    .width{
+        width:90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    main .news{
+        width:70%;
+    }
+    main figcaption{
+        width: 70%;
+    }
+    main .box a{
+        width: 200px;
+    }
+}
+@media screen and (max-width:992px){
+    .width{
+        width:90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    main .news{
+        width:100%;
+        margin-bottom: 10px;
+        float: none;
+    }
+    main .box{
+        float: none;
+    }
+    main .box a{
+        width:100% !important;
+    }
+    main .paging{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .width{
+        width:90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    main .news{
+        width:100%;
+        float: none;
+    }
+    main .box{
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+    main .box a{
+        width:100% !important;
+    }
+    main .paging{
+        display: none;
+    }
+    main figcaption{
+        width: 100% !important;
+    }
+
+}
+@media screen and (max-width:450px){
+    main .news{
+        width:100%;
+    }
+    main figcaption{
+        width: 100% !important;
+    }
+    main .box{
+        width: 100%;
+        float: none;
+    }
+    main .box a{
+        width:100% !important;
+    }
+    main .paging{
+        display: none;
+    }
+}

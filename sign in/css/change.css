@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*===================================main start*/
+main .click{
+    color: #444;
+    line-height: 18px;
+    font-size: 13px;
+}
+main form p{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+main form label{
+    margin-top: 15px;
+}
+main form input[type='text']{
+    margin-bottom: 0;
+}
+main form .strength{
+    margin-top: 15px;
+    color: #888;
+    font-size: 13px;
+}
+main form .strength span{
+    width: 40px;
+    height: 8px;
+    display: inline-block;
+    background: #ddd;
+    margin: 14px 0 0 0;
+}
+main form .but{
+    border-top: 1px solid #e5e5e5;
+    margin-top: 15px;
+}
+main form .container input[type='button']{
+    font-size: 12px !important;
+    width: 30%;
+}
+main form .container .register{
+    width: 40% !important;
+}
+/*===================================main end*/
+/*==================================响应式开始*/
+@media screen and (max-width:450px){
+    main form .container input[type='button']{
+        display: block;
+        width: 100%;
+    }
+    main form .container .register{
+        width: 100%!important;
+    }
+}
+/*==================================响应式结束*/

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.navigation ul li:nth-of-type(3){
+    background: #5E0000;
+}
+/*======================================main start*/
+main .container{
+    margin-top: 40px;
+}
+main .container div p{
+    color: #666666;
+    padding: 10px 0;
+    display: block;
+    border: 1px solid rgba(221,221,221,1);
+    border-bottom: transparent;
+    background: #EDEDED;
+}
+main .container table{
+    width: 100%;
+    border: 1px solid rgba(221,221,221,1);
+}
+main .container table tr{
+    border: 1px solid rgba(221,221,221,1);
+}
+main .container table td{
+    height: 36px;
+}
+main .container table td a{
+    display: inline-block;
+    float: left;
+    padding: 2px 25px;
+    font-size: 12px;
+    color: #666666;
+}
+main .container table th{
+    width: 80px;
+    color: #919191;
+    font-family: 宋体;
+    font-size: 12px;
+    border: 1px solid rgba(221,221,221,1);
+    background: #EDEDED;
+}
+main .commodity{
+    margin-top: 30px;
+}
+main .commodity figure{
+    border: 1px solid #ededed;
+    padding: 2px;
+    margin: 0 10px 15px 0;
+    width: calc((100% / 5) - 16px) !important;
+}
+main .commodity span{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #dd3333;
+    font-family: arial;
+    margin-bottom: 6px;
+}
+main .commodity a{
+    font-size: 13px;
+    font-weight: normal;
+    color: #494949;
+    margin-bottom: 6px;
+}
+/*======================================main end*/
+/*=========================================响应式*/
+@media screen and (max-width:1200px) and (min-width:993px){
+    .width{
+        width:90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    main .commodity figure{
+        width: calc((100% / 3) - 30px) !important;
+    }
+    main .commodity figure img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width:992px){
+    .width{
+        width:90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    main .commodity figure{
+        width: calc((100% / 3) - 30px) !important;
+    }
+    main .commodity figure img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .width{
+        width:90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    main .container div p{
+        display: none;
+    }
+    main .container table th{
+        display: none;
+    }
+    main .container table tr{
+        display: block;
+    }
+    main .container table .strain td{
+        display: block !important;
+        text-align: center !important;
+        background: #EDEDED !important;
+    }
+    main .container table td a{
+        padding: 2px 15px;
+    }
+    main .commodity figure{
+        width: calc((100% / 2) - 16px) !important;
+    }
+}
+@media screen and (max-width:450px){
+    main .container table td a{
+        padding: 2px 6px;
+    }
+}
